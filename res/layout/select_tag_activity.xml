@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tag_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="16.0dip"
+        android:text="标签选择器 TagView demo"
+        android:textColor="@color/color_shenhui"
+        android:textSize="16.0sp" />
+
+    <com.niceapp.lib.tagview.widget.TagListView
+        xmlns:f="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tagview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_margin"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="16.0dip"
+        f:horizontalSpacing="@dimen/tag_horizontal_spacing"
+        f:orientation="horizontal"
+        f:verticalSpacing="@dimen/tag_vertical_spacing" />
+
+</LinearLayout>
